@@ -1,5 +1,16 @@
 import 'dart:io';
 
+class NestedForLoopWithoutBreak {
+  void nestedForLoopWithoutBreak() {
+    var cookieSheets = 10;
+    var cookies = 100;
+    for (var i = 1; i <= cookieSheets; i++) {
+      print('Outside loop: i = $i');
+      for (var j = 1; j <= 10; j++) {
+        print(' Nested Loop: j = $j');
+      }
+    }
+
 //void main() {
 //  var n = 6;
 //  print('');
@@ -19,14 +30,10 @@ import 'dart:io';
 //    }
 //  }
 //}
+  }
+}
 
 void main() {
-  var cookieSheets = 10;
-  var cookies = 100;
-  for (var i = 1; i <= cookieSheets; i++) {
-    print('Outside loop: i = $i');
-    for (var j = 1; j <= 10; j++) {
-      print(' Nested Loop: j = $j');
-    }
-  }
+  var nflwb = NestedForLoopWithoutBreak();
+  nflwb.nestedForLoopWithoutBreak();
 }
