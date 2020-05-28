@@ -1,10 +1,3 @@
-/*class class_name {
-  Properties (Variables)
-  Constructor
-  Methods or Functions
-  Getters and Setters
-}*/
-
 class Car {
   //properties
   String colour, name;
@@ -31,3 +24,10 @@ void main() {
   print('2nd car name is ${secondCar.name} and colour is ${secondCar.colour}');
   secondCar.brake();
 }
+
+/*class class_name {
+  Properties (Variables)
+  Constructor
+  Methods or Functions
+  Getters and Setters
+}*/

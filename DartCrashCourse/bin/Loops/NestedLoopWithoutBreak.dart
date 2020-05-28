@@ -11,7 +11,6 @@ import 'dart:io';
 //  }
 //}
 
-
 //void main() {
 //  for (var i = 1; i < 5; i++) {
 //    print("Outside loop: i = $i");
@@ -22,12 +21,12 @@ import 'dart:io';
 //}
 
 void main() {
-  int cookieSheets = 10;
-  int cookies = 100;
+  var cookieSheets = 10;
+  var cookies = 100;
   for (var i = 1; i <= cookieSheets; i++) {
-    print("Outside loop: i = $i");
+    print('Outside loop: i = $i');
     for (var j = 1; j <= 10; j++) {
-      print(" Nested Loop: j = $j");
+      print(' Nested Loop: j = $j');
     }
   }
 }

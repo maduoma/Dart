@@ -8,18 +8,18 @@ class Car {
   }
 
   //Methods
-  void driving() {
-    print('${this.colour} ${this.name} is driving');
+  void moving() {
+    print('${colour} ${name} is moving');
   }
 
   void brake() {
-    print('${this.colour} ${this.name} is not driving');
+    print('${colour} ${name} is not moving');
   }
 }
 
 void main() {
   var firstCar = Car('Prius', 'White');
-  firstCar.driving();
+  firstCar.moving();
   var secondCar = Car('Honda Fit', 'Black');
   secondCar.brake();
 }

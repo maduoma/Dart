@@ -1,8 +1,10 @@
-void main() {
-  try {
-    checkMarks(-20);
-  } catch (e) {
-    print(e.errorMessage());
+class CustomException {
+  void handleException() {
+    try {
+      checkMarks(-20);
+    } catch (e) {
+      print(e.errorMessage());
+    }
   }
 }
 
@@ -14,4 +16,9 @@ class GradeException implements Exception {
   String errorMessage() {
     return 'Marks cannot be -ve values';
   }
+}
+
+void main() {
+  var ce = CustomException();
+  ce.handleException();
 }
