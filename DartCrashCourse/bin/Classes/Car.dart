@@ -3,12 +3,12 @@ class Car {
   String colour, name;
 
   //Methods
-  void driving() {
-    print('Car is driving');
+  void moving() {
+    print('Car is moving');
   }
 
   void brake() {
-    print('Brake has been applied');
+    print('Car has stopped after brake was applied');
   }
 }
 
@@ -17,7 +17,7 @@ void main() {
   firstCar.name = 'Prius';
   firstCar.colour = 'White';
   print('1st car name is ${firstCar.name} and colour is ${firstCar.colour}');
-  firstCar.driving();
+  firstCar.moving();
   var secondCar = Car();
   secondCar.name = 'Honda Fit';
   secondCar.colour = 'Black';

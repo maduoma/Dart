@@ -9,7 +9,7 @@ class Car {
   }
 
   //Methods
-  void driving() {
+  void moving() {
     print('$colour $name is moving');
   }
 
@@ -20,7 +20,7 @@ class Car {
 
 void main() {
   var firstCar = Car('Prius', 'White');
-  firstCar.driving();
+  firstCar.moving();
   var secondCar = Car('Honda Fit', 'Black');
   secondCar.brake();
   var thirdCar = Car.customCon('Grey', 'Toyota Camry');
