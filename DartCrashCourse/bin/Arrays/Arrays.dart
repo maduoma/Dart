@@ -5,7 +5,7 @@ import 'dart:collection';
 
 class ArrayDemo {
   void arrayLiteralConstructor() {
-    print('====================arrayLiteralConstructor()===============');
+    print('====================arrayLiteralConstructor()================');
     //A new array can be created by using the literal constructor []
     var arr = ['a', 'b', 'c', 'd', 'e'];
     print(arr);
