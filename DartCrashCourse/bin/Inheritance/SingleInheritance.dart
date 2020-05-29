@@ -3,7 +3,7 @@ class Car {
 
   Car(var name, var plateNum) {
     carName = name;
-    plateNumber = plateNum;
+plateNumber = plateNum;
   }
 
   void move() {
