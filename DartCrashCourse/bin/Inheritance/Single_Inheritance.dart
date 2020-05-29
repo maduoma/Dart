@@ -3,7 +3,7 @@ class Car {
 
   Car(var name, var plateNum) {
     carName = name;
-plateNumber = plateNum;
+    plateNumber = plateNum;
   }
 
   void move() {
@@ -17,10 +17,20 @@ plateNumber = plateNum;
 
 class HybridCar extends Car {
   HybridCar(name, plateNum) : super(name, plateNum);
+  @override
+  void fly() {
+    print('==============This is from Hybrid==========');
+    super.fly();
+  }
 }
 
 void main() {
   var volkswagen = Car('Volkswagen', 'TYF 345 TY');
+  //print(volkswagen.toString());
   volkswagen.move();
   volkswagen.fly();
+
+  var hybridCar = HybridCar('Hybrid Car', 'HGP 980 YH');
+  //print(hybridCar.toString());
+  hybridCar.fly();
 }
