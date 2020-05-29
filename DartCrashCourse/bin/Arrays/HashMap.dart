@@ -8,7 +8,7 @@ class HashMapDemo {
     myEmpl.putIfAbsent('Maduabughichi', () => 9000000000000000000);
     myEmpl.putIfAbsent('Judith', () => 9000000000000000000);
     for (var employees in myEmpl.keys) {
-      stdout.write('$employees with salary of \$'); //Prints to to the console without going to the next line
+      stdout.write('$employees with salary of \$'); //Prints to to the console without jumping to the next line
       print(myEmpl[employees]);
     }
     print('==================OR=============================');
