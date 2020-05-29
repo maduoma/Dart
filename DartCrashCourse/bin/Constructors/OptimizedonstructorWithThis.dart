@@ -6,11 +6,11 @@ class Car {
 
   //Methods
   void moving() {
-    print('${this.colour} ${name} is moving');
+    print('${colour} ${name} is moving.');
   }
 
   void brake() {
-    print('${colour} ${name} has stopped!');
+    print('${colour} ${name} has stopped after brake was applied!');
   }
 }
 
