@@ -1,18 +1,20 @@
+import 'dart:io';
+
 class Fish {
   void move() {
-    print('Changed position...');
+    print('Changed position from the Child class...');
   }
 }
 
 mixin CanFly {
   void fly() {
-    print('Can fly');
+    print('Can fly from the mixin CanFly');
   }
 }
 
 mixin CanSwim {
   void swim() {
-    print('Can swim');
+    print('Can swim from the mixin CanSwim');
   }
 }
 
@@ -28,4 +30,5 @@ void main() {
   Fish().move();
   Duck().fly();
   Duck().swim();
+  Duck().move();
 }
