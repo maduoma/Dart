@@ -1,17 +1,17 @@
 class Car {
   var carName, plateNumber;
 
-  Car(var name, var plateNum) {
-    carName = name;
-    plateNumber = plateNum;
+  Car(this.carName, this.plateNumber) {
+    //carName = name;
+    //plateNumber = plateNum;
   }
 
   void move() {
-    print('The car can move');
+    print('The car: $carName can move.');
   }
 
   void fly() {
-    print('The car can fly');
+    print('The car: $carName can fly.');
   }
 }
 
@@ -21,16 +21,19 @@ class HybridCar extends Car {
   void fly() {
     print('==============This is from Hybrid==========');
     super.fly();
+    super.move();
+    print('The hybrid car is $carName with a plate number of $plateNumber.');
   }
 }
 
 void main() {
   var volkswagen = Car('Volkswagen', 'TYF 345 TY');
-  //print(volkswagen.toString());
+  print(volkswagen.toString());
+  Car('Volkswagen', 'TYF 345 TY');
   volkswagen.move();
-  volkswagen.fly();
 
   var hybridCar = HybridCar('Hybrid Car', 'HGP 980 YH');
   //print(hybridCar.toString());
+  HybridCar('Hybrid Car', 'HGP 980 YH');
   hybridCar.fly();
 }
