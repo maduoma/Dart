@@ -1,18 +1,18 @@
 class Car {
   // Use => to function and its body in one line of code
-  void ShowOwner() => print('This is Parent\'s car');
+  void showOwner() => print('This is Parent\'s car');
 }
 
 class Jay extends Car {
   @override
-  void ShowOwner() {
+  void showOwner() {
     print('This is JD\'s car');
   }
 }
 
 class Salon extends Car {
   @override
-  void ShowOwner() {
+  void showOwner() {
     print('This is Salon\'s car');
   }
 }
@@ -24,7 +24,7 @@ void main() {
   var jdCar = Jay();
   var salonCar = Salon();
 
-  parentCar.ShowOwner();
-  jdCar.ShowOwner();
-  salonCar.ShowOwner();
+  parentCar.showOwner();
+  jdCar.showOwner();
+  salonCar.showOwner();
 }
