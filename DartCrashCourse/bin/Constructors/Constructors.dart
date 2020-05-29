@@ -9,11 +9,11 @@ class Car {
 
   //Methods
   void moving() {
-    print('${colour} ${name} is moving');
+    print('${colour} ${name} is moving.');
   }
 
   void brake() {
-    print('${colour} ${name} is not moving');
+    print('${colour} ${name} stopped moving after brake was applied.');
   }
 }
 
